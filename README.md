@@ -21,7 +21,7 @@ N'oublie pas de consulter tes ressources de cours et de vérifier ton travail av
 ### Des informations manquent !
 
 - Tu as oublié d'ajouter un paragraphe dans la description de ta boutique.
-  - Utilise `querySelector` pour récupérer l'élément parent du paragraphe existant dans le HTML.
+  - Utilise `querySelector` pour récupérer le noeud HTML parent du paragraphe existant dans le HTML.
   - Crée un nouveau paragraphe avec `createElement`.
   - Ajoute le texte suivant `Pour cela, il vous suffit de cliquer sur une des potions de la liste ci-dessous pour l'acheter.` en l'affectant à la propriété `textContent` du paragraphe.
   - Ajoute le paragraphe avec la méthode `appendChild` du parent.
@@ -30,7 +30,7 @@ N'oublie pas de consulter tes ressources de cours et de vérifier ton travail av
 
 Roger, un collègue sorcier jaloux, a entaché le titre de ta boutique (avec le mot `pacotille`).
 
-- Utilise `querySelector` pour récupérer l'élément avec l'id `blague_de_roger_le_sorcier` et supprime-le avec la méthode `remove`.
+- Utilise `querySelector` pour récupérer le noeud HTML avec l'id `blague_de_roger_le_sorcier` et supprime-le avec la méthode `remove`.
 
 ### Archibald n'est pas là, appelons le !
 
@@ -41,7 +41,7 @@ Roger, un collègue sorcier jaloux, a entaché le titre de ta boutique (avec le 
 
 Le temps que tu arrives, l'Aventurier a des boutons permettant de changer les boîtes de couleur.
 
-- Utilise `querySelectorAll` pour récupérer toutes les boîtes à l'intérieur de la `<div id="boites_magique">`.
+- Utilise `querySelectorAll` pour récupérer tous les noeuds HTML des boîtes à l'intérieur de la `<div id="boites_magique">`.
 - Attache un évènement à chacun des boutons.
 - En fonction de chaque bouton, change la couleur de fond des boîtes en utilisant la propriété `style`.
 
@@ -65,7 +65,7 @@ const potions = [
 ```
 
 - Pour chaque potion :
-  - Utilise `querySelector` pour récupérer le contenant de la liste des potions `<div id="liste_potions">`.
+  - Utilise `querySelector` pour récupérer le contenant du noeud HTML de la liste des potions `<div id="liste_potions">`.
   - Les éléments à créer sont plus conséquents avec `createElement`. Utilise les `template` _(que vous trouverez dans le code html)_.
     - Utilise `querySelector` pour récupérer le template avec son id.
     - Clone le contenu dans une constante avec `.content.cloneNode(true);`.
