@@ -53,6 +53,35 @@ Roger, un collègue sorcier jaloux, entache le titre de ta boutique (avec le mot
 
 Tu as des boutons permettant de changer les boîtes de couleur.
 
-- Récupère avec `querySelectorAll` toutes les boîtes à l'intérieur de la `div#boites_magique`
+- Récupère avec `querySelectorAll` toutes les boîtes à l'intérieur de la `<div id="boites_magique">`
 - Attache un évènement à chacun des boutons
 - En fonction de chaque bouton change la couleur de fond des boîtes en utilisant la propriété `style` pour chaque boîte
+
+### Aventurier, voici ma boutique !
+
+Récupérez cette liste de potions :
+
+```js
+const potions = [
+  {
+    nom: "Potion de soin",
+    description: "",
+    prix: 10,
+  },
+  {
+    nom: "Potion de sommeil",
+    description: "",
+    prix: 50,
+  },
+];
+```
+
+- Pour chaque potion :
+  - Récupère dans une constante le contenant de la liste des potions `<div id="liste_potions">`
+  - Les éléments à créer sont plus conséquents avec `createElement` nous allons donc utiliser les `template`
+  - Récupère le template avec `querySelector` sur son id
+  - Clone le contenu dans une constante avec `.content.cloneNode(true);`
+  - À partir d'ici tu peux remplacer les éléments du template avec `querySelector` et `textContent`
+    - `<h5 class="card-title">` contient le titre
+    - `<span class="prix"></span>` contient le prix
+    - `<p class="card-text">` contient le texte
