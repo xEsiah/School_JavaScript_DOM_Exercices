@@ -24,10 +24,29 @@
       <button id="btn_change_green" class="btn btn-success">🪄 Change tous les carrés en vert</button>
 
       <div id="boites_magique" class="mt-4 row gap-5">
-        <div style="width: 100px; height: 100px; background-color: grey"></div>
-        <div style="width: 100px; height: 100px; background-color: grey"></div>
-        <div style="width: 100px; height: 100px; background-color: grey"></div>
+        <div class="boite" style="width: 100px; height: 100px; background-color: grey"></div>
+        <div class="boite" style="width: 100px; height: 100px; background-color: grey"></div>
+        <div class="boite" style="width: 100px; height: 100px; background-color: grey"></div>
       </div>
+
+      <h2 class="my-4">Les potions de la boutique</h2>
+
+      <div id="liste_potions" class="row"></div>
     </div>
+
+    <template id="template_potion">
+      <div class="card bg-secondary col-4">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p>
+            Prix:
+            <span class="prix"></span>
+            🪙
+          </p>
+          <p class="card-text"></p>
+          <button class="btn btn-primary">Acheter</button>
+        </div>
+      </div>
+    </template>
   </body>
 </html>
