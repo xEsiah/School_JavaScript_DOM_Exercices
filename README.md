@@ -23,3 +23,15 @@ Commencez avec ces constantes
 ```
 
 ## Exercices
+
+### Quel est le titre de la boutique
+
+- Récupère le titre de la boutique avec `querySelector` et affiche dans le `console` la valeur de `textContent`
+
+### Des informations manquent !
+
+- Archibald a oublié d'ajouter un paragraphe dans la description de sa boutique.
+  - Avec `querySelector` récupère l'élément parent du paragraphe existant dans le HTML
+  - Crée un nouveau paragraphe avec
+  - Et ajoute le paragraphe avec `appendChild` suivant :
+    - `Pour cela, il vous suffit de cliquer sur une des potions de la liste ci-dessous pour l'acheter.`
