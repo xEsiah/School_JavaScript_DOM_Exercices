@@ -6,7 +6,8 @@
 
 ## Rappels
 
-N'oublie pas de consulter tes ressources de cours et de vérifier ton travail avec `console.log`.
+- N'hésitez pas à consulter vos notes de cours et la documentation en ligne.
+- Utilisez console.log() fréquemment pour vérifier vos résultats.
 
 ## Thème 🔮🧙‍♂️🧪🪙🍄
 
@@ -31,11 +32,11 @@ N'oublie pas de consulter tes ressources de cours et de vérifier ton travail av
 
 Roger, un collègue sorcier jaloux, a entaché le titre de ta boutique (avec le mot `pacotille`).
 
-- Utilise `querySelector` pour récupérer le noeud HTML avec l'id `blague_de_roger_le_sorcier` et supprime-le avec la méthode `remove`.
+- Utilise `querySelector` sur `document` pour récupérer le noeud HTML `<span id="blague_de_roger_le_sorcier">` et supprime-le du DOM avec la méthode `remove`.
 
 ### Archibald n'est pas là, appelons le !
 
-- Utilise `querySelector` pour récupérer le bouton et attache un évènement `click` avec la méthode `addEventListener`.
+- Utilise `querySelector` sur `document` pour récupérer le bouton et attache un évènement `click` avec la méthode `addEventListener`.
 - Depuis la fonction de rappel, utilise `alert` pour afficher `🧙‍♂️ J'arrive, j'arrive Aventurier !`.
 
 ### Faisons un peu de magie 🪄
