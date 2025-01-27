@@ -24,7 +24,7 @@ Mettez vos ressources de cours pas loin de vous et n'oubliez pas de vérifier ce
   - Avec `querySelector` récupère l'élément parent du paragraphe existant dans le HTML.
   - Crée un nouveau paragraphe avec `createElement`.
   - Ajoute-y le texte suivant `Pour cela, il vous suffit de cliquer sur une des potions de la liste ci-dessous pour l'acheter.` en l'affectant à la propriété `textContent` du paragraphe.
-  - Et ajoute le paragraphe avec la méthode `appendChild` du parant.
+  - Et ajoute le paragraphe avec la méthode `appendChild` du parent.
 
 ### Roger, enfoiré !
 
@@ -82,7 +82,7 @@ Un formulaire a été ajouté pour te permettre d'ajouter plus de potions à la 
 
 - Récupère le formulaire `<form>` avec `querySelector` et affecte le à une constante.
 - Gère la soumission du formulaire en y attachant un évènement `submit`, ce qui permettra de soumettre le formulaire avec le bouton et aussi avec la touche entrée.
-- Utilise l'objet `FormData` pour extraire les valeurs du formulaires.
+- Utilise l'objet `FormData` pour extraire les valeurs du formulaire.
   - `FormData` se crée avec le mot-clef `new` et tu peux y passer directement un `FormHtmlElement` (le formulaire que tu as affecté à ta constante). Ce qui donnerait : `const formData = new FormData(formHtmlElement)`.
   - Tu peux récupérer la valeur d'un champ de formulaire avec la méthode `get`.
 - Trouve un moyen pour réutiliser le code de l'exercice précédent avec une ou plusieurs fonctions, qui te permettra de rajouter cette nouvelle potion dans la boutique.
