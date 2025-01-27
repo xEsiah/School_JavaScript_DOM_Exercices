@@ -31,10 +31,10 @@ Commencez avec ces constantes
 ### Des informations manquent !
 
 - Archibald a oublié d'ajouter un paragraphe dans la description de sa boutique.
-  - Avec `querySelector` récupère l'élément parent du paragraphe existant dans le HTML
-  - Crée un nouveau paragraphe avec
-  - Et ajoute le paragraphe avec `appendChild` suivant :
-    - `Pour cela, il vous suffit de cliquer sur une des potions de la liste ci-dessous pour l'acheter.`
+  - Avec `querySelector` récupère l'élément parent du paragraphe existant dans le HTML.
+  - Crée un nouveau paragraphe avec `createElement`.
+  - Ajoute-y le texte suivant `Pour cela, il vous suffit de cliquer sur une des potions de la liste ci-dessous pour l'acheter.` en l'affectant à la propriété `textContent` du paragraphe.
+  - Et ajoute le paragraphe avec la méthode `appendChild` du parant.
 
 ### Roger, enfoiré !
 
