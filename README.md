@@ -86,7 +86,3 @@ Un formulaire a été ajouté pour te permettre d'ajouter plus de potions à la 
   - `FormData` se crée avec le mot-clef `new` et tu peux y passer directement un `FormHtmlElement` (le formulaire que tu as affecté à ta constante). Par exemple : `const formData = new FormData(formHtmlElement)`.
   - Utilise la méthode `get` pour récupérer la valeur d'un champ de formulaire.
 - Trouve un moyen pour réutiliser le code de l'exercice précédent avec une ou plusieurs fonctions, qui te permettra de rajouter cette nouvelle potion dans la boutique.
-- [BONUS] Tous les champs sont requis ! Si un champ est manquant, il faut prévenir l'utilisateur.
-  - Il y a déjà un élément présent avec un message d'erreur `<div class="invalid-feedback">`.
-  - Utilise `querySelector` pour récupérer ce noeud HTML depuis `<form>`.
-  - Affiche le en changeant la propriété css `display: none` en `display: block` grâce à la propriété `style`.
