@@ -39,4 +39,12 @@ Commencez avec ces constantes
 ### Roger, enfoiré !
 
 Roger, un collègue sorcier jaloux, entache le titre de ta boutique (avec le mot pacotille).
-Récupère l'élément avec `querySelector` en utilisant la constante dans laquelle tu as déjà stocké le titre pour aller chercher `<span id="blague_de_roger_le_sorcier">blague_de_roger_le_sorcier</span>` et supprime le en utilisant la méthode `remove`.
+
+- Récupère l'élément avec `querySelector` en utilisant la constante dans laquelle tu as déjà stocké le titre pour aller chercher `<span id="blague_de_roger_le_sorcier">blague_de_roger_le_sorcier</span>`
+- Supprime le en utilisant la méthode `remove`.
+
+### Archibald n'est pas là, appelons le !
+
+- Récupérer le bouton avec `querySelector`
+- Attache un évènement à ce bouton avec la méthode `addEventListener` sur l'évènement `click`
+- Depuis la fonction de rappel, fais un `alert` de `🧙‍♂️ J'arrive, j'arrive Aventurier !`
