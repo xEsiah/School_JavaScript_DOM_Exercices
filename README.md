@@ -48,3 +48,11 @@ Roger, un collègue sorcier jaloux, entache le titre de ta boutique (avec le mot
 - Récupérer le bouton avec `querySelector`
 - Attache un évènement à ce bouton avec la méthode `addEventListener` sur l'évènement `click`
 - Depuis la fonction de rappel, fais un `alert` de `🧙‍♂️ J'arrive, j'arrive Aventurier !`
+
+### Faisons un peu de magie 🪄
+
+Tu as des boutons permettant de changer les boîtes de couleur.
+
+- Récupère avec `querySelectorAll` toutes les boîtes à l'intérieur de la `div#boites_magique`
+- Attache un évènement à chacun des boutons
+- En fonction de chaque bouton change la couleur de fond des boîtes en utilisant la propriété `style` pour chaque boîte
