@@ -78,7 +78,7 @@ const potions = [
 
 - Pour chaque potion :
   - Récupère dans une constante le contenant de la liste des potions `<div id="liste_potions">`
-  - Les éléments à créer sont plus conséquents avec `createElement` nous allons donc utiliser les `template`
+  - Les éléments à créer sont plus conséquents avec `createElement` nous allons donc utiliser les `template` (que vous trouverez dans le code html)
   - Récupère le template avec `querySelector` sur son id
   - Clone le contenu dans une constante avec `.content.cloneNode(true);`
   - À partir d'ici tu peux remplacer les éléments du template avec `querySelector` et `textContent`

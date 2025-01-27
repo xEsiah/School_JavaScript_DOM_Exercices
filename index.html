@@ -32,18 +32,38 @@
       <h2 class="my-4">Les potions de la boutique</h2>
 
       <div id="liste_potions" class="row"></div>
+
+      <h2 class="my-4">Formulaire d'ajout de potions</h2>
+      <form class="form">
+        <div class="form-group">
+          <label>Nom</label>
+          <input type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <input type="text" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label>Prix 🪙</label>
+          <input type="number" class="form-control" />
+        </div>
+
+        <button>Ajout bouton</button>
+      </form>
     </div>
 
     <template id="template_potion">
       <div class="card bg-secondary col-4">
         <div class="card-body">
-          <h5 class="card-title"></h5>
+          <h5 class="card-title">Titre potion</h5>
           <p>
             Prix:
-            <span class="prix"></span>
+            <span class="prix">0</span>
             🪙
           </p>
-          <p class="card-text"></p>
+          <p class="card-text">Description potion</p>
           <button class="btn btn-primary">Acheter</button>
         </div>
       </div>
