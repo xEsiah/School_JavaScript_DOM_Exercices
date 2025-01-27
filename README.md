@@ -16,15 +16,16 @@ N'oublie pas de consulter tes ressources de cours et de vérifier ton travail av
 
 ### Quel est le titre de la boutique
 
-- Utilise `querySelector` pour récupérer le titre de la boutique et affiche sa valeur dans la `console`.
+- Utilise la méthode `querySelector` sur `document` pour récupérer le titre de la boutique `<h1>` et affecte la à une constante.
+- Récupère le texte avec la propriété `textContent` et affiche sa valeur dans la `console`.
 
 ### Des informations manquent !
 
 - Tu as oublié d'ajouter un paragraphe dans la description de ta boutique.
-  - Utilise `querySelector` pour récupérer le noeud HTML parent du paragraphe existant dans le HTML.
-  - Crée un nouveau paragraphe avec `createElement`.
+  - Utilise la méthode `querySelector` sur `document` pour récupérer le noeud HTML parent du paragraphe existant dans le HTML et affecte le à une constante.
+  - Crée un nouveau paragraphe avec la méthode `createElement` de `document`.
   - Ajoute le texte suivant `Pour cela, il vous suffit de cliquer sur une des potions de la liste ci-dessous pour l'acheter.` en l'affectant à la propriété `textContent` du paragraphe.
-  - Ajoute le paragraphe avec la méthode `appendChild` du parent.
+  - Ajoute le paragraphe avec la méthode `appendChild` sur ta constante comportant le noeud HTML du parent.
 
 ### Roger, enfoiré !
 
