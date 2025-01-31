@@ -30,19 +30,27 @@
         🛎️ Appeler Archibald
       </button>
 
-      <h2 class="my-4">Les boîtes magiques</h2>
+      <section class="row">
+        <h2 class="my-4">Les boîtes magiques</h2>
 
-      <button id="btn_change_red" class="btn btn-danger">
-        🪄 Change le 1er carré en rouge
-      </button>
-      <button id="btn_change_blue" class="btn btn-primary">
-        🪄 Change les 2 premiers carré en bleu
-      </button>
-      <button id="btn_change_green" class="btn btn-success">
-        🪄 Change tous les carrés en vert
-      </button>
+        <div class="col">
+          <button id="btn_change_red" class="btn btn-danger">
+            🪄 Change le 1er carré en rouge
+          </button>
+        </div>
+        <div class="col">
+          <button id="btn_change_blue" class="btn btn-primary">
+            🪄 Change les 2 premiers carré en bleu
+          </button>
+        </div>
+        <div class="col">
+          <button id="btn_change_green" class="btn btn-success">
+            🪄 Change tous les carrés en vert
+          </button>
+        </div>
+      </section>
 
-      <div id="boites_magique" class="mt-4 row gap-5">
+      <section id="boites_magique" class="row mt-4 gap-5">
         <div
           class="boite"
           style="width: 100px; height: 100px; background-color: grey"
@@ -55,23 +63,65 @@
           class="boite"
           style="width: 100px; height: 100px; background-color: grey"
         ></div>
-      </div>
+      </section>
 
       <h2 class="my-4">Les potions de la boutique</h2>
 
-      <div id="liste_potions" class="row"></div>
+      <section id="liste_potions" class="row">
+        <!-- Ceci est un exemple VISUEL, à supprimer ! -->
+        <!-- Le template à utiliser se situe dans la balise template -->
+        <div class="card bg-secondary col-5">
+          <div class="card-body">
+            <h5 class="card-title">Titre potion</h5>
+            <p>
+              Prix:
+              <span class="prix">0</span>
+              🪙
+            </p>
+            <p class="card-text">Description potion</p>
+            <button class="btn btn-primary">Acheter</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="row">
+        <h2 class="my-4">Formulaire d'ajout de potions</h2>
+
+        <form class="form">
+          <div class="form-group form-nom">
+            <label>Nom</label>
+            <input type="text" name="nom" class="form-control" />
+          </div>
+
+          <div class="form-group form-description">
+            <label>Description</label>
+            <input type="text" name="description" class="form-control" />
+          </div>
+
+          <div class="form-group form-prix">
+            <label>Prix 🪙</label>
+            <input type="number" name="prix" class="form-control" />
+          </div>
+
+          <button class="btn btn-primary mt-3">Ajouter à la boutique</button>
+          <div class="invalid-feedback">
+            Tu dois remplir tous les champs pour ajouter une potion à la
+            boutique.
+          </div>
+        </form>
+      </section>
     </div>
 
     <template id="template_potion">
-      <div class="card bg-secondary col-4">
+      <div class="card bg-secondary col-5">
         <div class="card-body">
-          <h5 class="card-title"></h5>
+          <h5 class="card-title nom_potion">Titre potion</h5>
           <p>
             Prix:
-            <span class="prix"></span>
+            <span class="prix_potion">0</span>
             🪙
           </p>
-          <p class="card-text"></p>
+          <p class="card-text description_potion">Description potion</p>
           <button class="btn btn-primary">Acheter</button>
         </div>
       </div>
