@@ -50,29 +50,36 @@ const potions = [
   },
 ];
 
-const template_toutes_les_potions = document.querySelector("#template_potion");
-const copietemplate = template_toutes_les_potions.content.cloneNode(true);
-const liste_potion = document.querySelector("#liste_potions");
-// const title = copietemplate.querySelector(".card-title");
-// const prix = copietemplate.querySelector(".prix");
-// const description = copietemplate.querySelector(".card-text");
-// liste_potion.appendChild(copietemplate);
-
 potions.forEach((potion) => {
-  const templatetHTML = document.createElement(`div`);
-  templatetHTML.classList.add("card", "bg-secondary", "col-4");
-  templatetHTML.innerHTML = `
-        <div class="card bg-secondary col-4">
-        <div class="card-body">
-          <h5 class="card-title">${potion.nom}</h5>
-          <p>
-            Prix:
-            <span class="prix">${potion.prix}</span>
-            🪙
-          </p>
-          <p class="card-text">${potion.description}</p>
-          <button class="btn btn-primary">Acheter</button>
-        </div>
-    `; //
-  liste_potions.appendChild(templateHTML);
+  const cardPotionHtml = template.content.cloneNode(true);
+
+  const liste_potions = document.querySelector("#liste_potions");
+  const title = cardPotionHtml.querySelector(".card-title");
+  const prix = cardPotionHtml.querySelector(".prix");
+  const description = cardPotionHtml.querySelector(".card-text");
+
+  title.textContent = potion.nom;
+  prix.textContent = potion.prix;
+  description.textContent = potion.description;
+
+  liste_potions.appendChild(cardPotionHtml);
 });
+
+// potions.forEach((potion) => {
+//   const templatetHTML = document.createElement(`div`);
+//   templatetHTML.classList.add("card", "bg-secondary", "col-4");
+//   templatetHTML.innerHTML = `
+//         <div class="card bg-secondary col-4">
+//         <div class="card-body">
+//           <h5 class="card-title">${potion.nom}</h5>
+//           <p>
+//             Prix:
+//             <span class="prix">${potion.prix}</span>
+//             🪙
+//           </p>
+//           <p class="card-text">${potion.description}</p>
+//           <button class="btn btn-primary">Acheter</button>
+//         </div>
+//     `; //
+//   liste_potions.appendChild(templateHTML);
+// });
